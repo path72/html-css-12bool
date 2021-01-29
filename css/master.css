@@ -1,0 +1,42 @@
+/*************************************
+    MAIN
+*/
+[class^="col_"] {
+  position: relative;
+  background-color: #f4b9c1;
+  height: 20vh;
+  border: 1px solid black;
+}
+/*************************************
+    LABELS
+*/
+[class^="col_"]::before {
+  /* content: "label"; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.1);
+}
+.col_1::before {
+  content: "1 col";
+}
+.col_2::before {
+  content: "2 col";
+}
+.col_8::before {
+  content: "8 col";
+}
+.col_6::before {
+  content: "6 col";
+}
+.col_12::before {
+  content: "12 col";
+}
