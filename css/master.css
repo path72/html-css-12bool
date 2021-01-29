@@ -1,42 +1,72 @@
 /*************************************
     MAIN
 */
-[class^="col_"] {
-  position: relative;
+
+/* 1st level boxes */
+.row_container > [class^="col_"] {
   background-color: #f4b9c1;
   height: 20vh;
+  padding: 5px;
   border: 1px solid black;
 }
+
+/* 2nd level boxes */
+[class^="col_"] > [class^="col_"] {
+  background-color: #e78282;
+  height: 100%;
+  border: 1px solid white;
+}
+
 /*************************************
     LABELS
 */
+
+/* label container */
+[class^="col_"] {
+  position: relative;
+}
+
+/* label settings */
 [class^="col_"]::before {
   /* content: "label"; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  display: block;
   font-size: 11px;
   font-family: "Roboto", sans-serif;
-  white-space: nowrap;
+  color: rgba(0,0,0,0.75);
+  min-width: 24px;
+  text-align: center;
   padding: 4px 8px;
   border-radius: 6px;
-  color: rgba(0,0,0,0.75);
   background-color: rgba(0,0,0,0.1);
 }
-.col_1::before {
+
+/* 1st level label text */
+.row_container > .col_1::before {
   content: "1 col";
 }
-.col_2::before {
+.row_container > .col_2::before {
   content: "2 col";
 }
-.col_8::before {
+.row_container > .col_8::before {
   content: "8 col";
 }
-.col_6::before {
+.row_container > .col_6::before {
   content: "6 col";
 }
-.col_12::before {
+.row_container > .col_12::before {
   content: "12 col";
+}
+
+/* 2nd level label text */
+[class^="col_"] > .col_2::before {
+  content: "Nested 2 col";
+}
+[class^="col_"] > .col_6::before {
+  content: "Nested 6 col";
+}
+[class^="col_"] > .col_8::before {
+  content: "Nested 8 col";
 }
