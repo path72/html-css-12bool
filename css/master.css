@@ -70,3 +70,39 @@
 [class^="col_"] > .col_8::before {
   content: "Nested 8 col";
 }
+
+/*************************************
+    SCHERZO
+*/
+
+[class^="col_1"]:nth-child(3n+2) {
+  animation-name: test;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-time-function: linear;
+  animation-delay: 10s;
+}
+[class^="col_1"]:nth-child(2n+1) {
+  animation-name: test;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-time-function: linear;
+  animation-delay: 14s;
+}
+[class^="col_"] {
+  animation-name: test;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-time-function: linear;
+  animation-delay: 18s;
+}
+@keyframes test {
+0%   {transform: rotate(0deg);}
+25%  {transform: rotate(10deg);}
+50%  {transform: rotate(360deg);}
+75%  {transform: rotate(750deg);}
+100% {transform: rotate(0deg);}
+}
