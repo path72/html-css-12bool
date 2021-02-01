@@ -44,32 +44,235 @@
 }
 
 /* 1st level label text */
-/* .row_container > [class*="col_lg_1"]::before {
+.row_container > [class*="col_lg_1"]::before {
   content: "1 col";
 }
 .row_container > [class*="col_lg_2"]::before {
   content: "2 col";
 }
-.row_container > [class*="col_lg_8"]::before {
-  content: "8 col";
+.row_container > [class*="col_lg_3"]::before {
+  content: "3 col";
+}
+.row_container > [class*="col_lg_4"]::before {
+  content: "4 col";
+}
+.row_container > [class*="col_lg_5"]::before {
+  content: "5 col";
 }
 .row_container > [class*="col_lg_6"]::before {
   content: "6 col";
 }
+.row_container > [class*="col_lg_7"]::before {
+  content: "7 col";
+}
+.row_container > [class*="col_lg_8"]::before {
+  content: "8 col";
+}
+.row_container > [class*="col_lg_9"]::before {
+  content: "9 col";
+}
+.row_container > [class*="col_lg_10"]::before {
+  content: "10 col";
+}
+.row_container > [class*="col_lg_11"]::before {
+  content: "11 col";
+}
 .row_container > [class*="col_lg_12"]::before {
   content: "12 col";
-} */
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .row_container > [class*="col_md_1"]::before {
+    content: "1 col";
+  }
+  .row_container > [class*="col_md_2"]::before {
+    content: "2 col";
+  }
+  .row_container > [class*="col_md_3"]::before {
+    content: "3 col";
+  }
+  .row_container > [class*="col_md_4"]::before {
+    content: "4 col";
+  }
+  .row_container > [class*="col_md_5"]::before {
+    content: "5 col";
+  }
+  .row_container > [class*="col_md_6"]::before {
+    content: "6 col";
+  }
+  .row_container > [class*="col_md_7"]::before {
+    content: "7 col";
+  }
+  .row_container > [class*="col_md_8"]::before {
+    content: "8 col";
+  }
+  .row_container > [class*="col_md_9"]::before {
+    content: "9 col";
+  }
+  .row_container > [class*="col_md_10"]::before {
+    content: "10 col";
+  }
+  .row_container > [class*="col_md_11"]::before {
+    content: "11 col";
+  }
+  .row_container > [class*="col_md_12"]::before {
+    content: "12 col";
+  }
+}
+@media screen and (max-width: 768px) {
+  .row_container > [class*="col_xs_1"]::before {
+    content: "1 col";
+  }
+  .row_container > [class*="col_xs_2"]::before {
+    content: "2 col";
+  }
+  .row_container > [class*="col_xs_3"]::before {
+    content: "3 col";
+  }
+  .row_container > [class*="col_xs_4"]::before {
+    content: "4 col";
+  }
+  .row_container > [class*="col_xs_5"]::before {
+    content: "5 col";
+  }
+  .row_container > [class*="col_xs_6"]::before {
+    content: "6 col";
+  }
+  .row_container > [class*="col_xs_7"]::before {
+    content: "7 col";
+  }
+  .row_container > [class*="col_xs_8"]::before {
+    content: "8 col";
+  }
+  .row_container > [class*="col_xs_9"]::before {
+    content: "9 col";
+  }
+  .row_container > [class*="col_xs_10"]::before {
+    content: "10 col";
+  }
+  .row_container > [class*="col_xs_11"]::before {
+    content: "11 col";
+  }
+  .row_container > [class*="col_xs_12"]::before {
+    content: "12 col";
+  }
+}
 
 /* 2nd level label text */
-/* [class*="col_"] > .col_2::before {
+[class*="col_"] > [class*="col_lg_1"]::before {
+  content: "Nested 1 col";
+}
+[class*="col_"] > [class*="col_lg_2"]::before {
   content: "Nested 2 col";
 }
-[class*="col_"] > .col_6::before {
+[class*="col_"] > [class*="col_lg_3"]::before {
+  content: "Nested 3 col";
+}
+[class*="col_"] > [class*="col_lg_4"]::before {
+  content: "Nested 4 col";
+}
+[class*="col_"] > [class*="col_lg_5"]::before {
+  content: "Nested 5 col";
+}
+[class*="col_"] > [class*="col_lg_6"]::before {
   content: "Nested 6 col";
 }
-[class*="col_"] > .col_8::before {
+[class*="col_"] > [class*="col_lg_7"]::before {
+  content: "Nested 7 col";
+}
+[class*="col_"] > [class*="col_lg_8"]::before {
   content: "Nested 8 col";
-} */
+}
+[class*="col_"] > [class*="col_lg_9"]::before {
+  content: "Nested 9 col";
+}
+[class*="col_"] > [class*="col_lg_10"]::before {
+  content: "Nested 10 col";
+}
+[class*="col_"] > [class*="col_lg_11"]::before {
+  content: "Nested 11 col";
+}
+[class*="col_"] > [class*="col_lg_12"]::before {
+  content: "Nested 12 col";
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  [class*="col_"] > [class*="col_md_1"]::before {
+    content: "Nested 1 col";
+  }
+  [class*="col_"] > [class*="col_md_2"]::before {
+    content: "Nested 2 col";
+  }
+  [class*="col_"] > [class*="col_md_3"]::before {
+    content: "Nested 3 col";
+  }
+  [class*="col_"] > [class*="col_md_4"]::before {
+    content: "Nested 4 col";
+  }
+  [class*="col_"] > [class*="col_md_5"]::before {
+    content: "Nested 5 col";
+  }
+  [class*="col_"] > [class*="col_md_6"]::before {
+    content: "Nested 6 col";
+  }
+  [class*="col_"] > [class*="col_md_7"]::before {
+    content: "Nested 7 col";
+  }
+  [class*="col_"] > [class*="col_md_8"]::before {
+    content: "Nested 8 col";
+  }
+  [class*="col_"] > [class*="col_md_9"]::before {
+    content: "Nested 9 col";
+  }
+  [class*="col_"] > [class*="col_md_10"]::before {
+    content: "Nested 10 col";
+  }
+  [class*="col_"] > [class*="col_md_11"]::before {
+    content: "Nested 11 col";
+  }
+  [class*="col_"] > [class*="col_md_12"]::before {
+    content: "Nested 12 col";
+  }
+}
+@media screen and (max-width: 768px) {
+  [class*="col_"] > [class*="col_xs_1"]::before {
+    content: "Nested 1 col";
+  }
+  [class*="col_"] > [class*="col_xs_2"]::before {
+    content: "Nested 2 col";
+  }
+  [class*="col_"] > [class*="col_xs_3"]::before {
+    content: "Nested 3 col";
+  }
+  [class*="col_"] > [class*="col_xs_4"]::before {
+    content: "Nested 4 col";
+  }
+  [class*="col_"] > [class*="col_xs_5"]::before {
+    content: "Nested 5 col";
+  }
+  [class*="col_"] > [class*="col_xs_6"]::before {
+    content: "Nested 6 col";
+  }
+  [class*="col_"] > [class*="col_xs_7"]::before {
+    content: "Nested 7 col";
+  }
+  [class*="col_"] > [class*="col_xs_8"]::before {
+    content: "Nested 8 col";
+  }
+  [class*="col_"] > [class*="col_xs_9"]::before {
+    content: "Nested 9 col";
+  }
+  [class*="col_"] > [class*="col_xs_10"]::before {
+    content: "Nested 10 col";
+  }
+  [class*="col_"] > [class*="col_xs_11"]::before {
+    content: "Nested 11 col";
+  }
+  [class*="col_"] > [class*="col_xs_12"]::before {
+    content: "Nested 12 col";
+  }
+}
+
+
+
 
 /*************************************
     SCHERZO
