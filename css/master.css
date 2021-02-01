@@ -3,7 +3,7 @@
 */
 
 /* 1st level boxes */
-.row_container > [class^="col_"] {
+.row_container > [class*="col_"] {
   background-color: #f4b9c1;
   height: 20vh;
   padding: 5px;
@@ -11,7 +11,7 @@
 }
 
 /* 2nd level boxes */
-[class^="col_"] > [class^="col_"] {
+[class*="col_"] > [class*="col_"] {
   background-color: #e78282;
   height: 100%;
   border: 1px solid white;
@@ -22,13 +22,13 @@
 */
 
 /* label container */
-[class^="col_"] {
+[class*="col_"] {
   position: relative;
 }
 
 /* label settings */
-[class^="col_"]::before {
-  /* content: "label"; */
+[class*="col_"]::before {
+  content: "label";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,38 +44,38 @@
 }
 
 /* 1st level label text */
-.row_container > .col_1::before {
+/* .row_container > [class*="col_lg_1"]::before {
   content: "1 col";
 }
-.row_container > .col_2::before {
+.row_container > [class*="col_lg_2"]::before {
   content: "2 col";
 }
-.row_container > .col_8::before {
+.row_container > [class*="col_lg_8"]::before {
   content: "8 col";
 }
-.row_container > .col_6::before {
+.row_container > [class*="col_lg_6"]::before {
   content: "6 col";
 }
-.row_container > .col_12::before {
+.row_container > [class*="col_lg_12"]::before {
   content: "12 col";
-}
+} */
 
 /* 2nd level label text */
-[class^="col_"] > .col_2::before {
+/* [class*="col_"] > .col_2::before {
   content: "Nested 2 col";
 }
-[class^="col_"] > .col_6::before {
+[class*="col_"] > .col_6::before {
   content: "Nested 6 col";
 }
-[class^="col_"] > .col_8::before {
+[class*="col_"] > .col_8::before {
   content: "Nested 8 col";
-}
+} */
 
 /*************************************
     SCHERZO
 */
-
-[class^="col_1"]:nth-child(3n+2) {
+/*
+[class*="col_1"]:nth-child(3n+2) {
   animation-name: test;
   animation-duration: 4s;
   animation-iteration-count: 2;
@@ -83,7 +83,7 @@
   animation-time-function: linear;
   animation-delay: 10s;
 }
-[class^="col_1"]:nth-child(2n+1) {
+[class*="col_1"]:nth-child(2n+1) {
   animation-name: test;
   animation-duration: 4s;
   animation-iteration-count: 2;
@@ -91,7 +91,7 @@
   animation-time-function: linear;
   animation-delay: 14s;
 }
-[class^="col_"] {
+[class*="col_"] {
   animation-name: test;
   animation-duration: 4s;
   animation-iteration-count: 1;
@@ -105,4 +105,4 @@
 50%  {transform: rotate(360deg);}
 75%  {transform: rotate(750deg);}
 100% {transform: rotate(0deg);}
-}
+} */
